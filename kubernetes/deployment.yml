@@ -3,7 +3,7 @@ apiVersion: "apps/v1"
 kind: "Deployment"
 metadata:
   name: "k8s-node"
-  namespace: "default"
+  namespace: "argocd-ronen"
   labels:
     app: "k8s-node"
 spec:
@@ -32,7 +32,7 @@ apiVersion: "autoscaling/v2beta1"
 kind: "HorizontalPodAutoscaler"
 metadata:
   name: "k8s-node-hpa"
-  namespace: "default"
+  namespace: "argocd-ronen"
   labels:
     app: "k8s-node"
 spec:
